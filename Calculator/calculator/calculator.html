@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=1170">
+	<title>CalCulAte</title>
+	<link rel="stylesheet" type="text/css" href="css/calculator.css">
+</head>
+<body>
+	<div class="calculator">
+		<div class="output">
+			<form action="1">
+				<input type="text" id="output_window" readonly="readonly" dir="ltl">
+			</form>
+		</div>
+		<div class="buttons">
+			<div class="buttons-rows">
+				<div class="buttons-rows__first-row">
+					<form action="1">
+						<input type="button" class="common-button-styles delete-all" value="C" onclick="inp('delete-all')">
+						<input type="button" class="common-button-styles (" value="(" onclick="inp(' ( ')">
+						<input type="button" class="common-button-styles )" value=")" onclick="inp(' ) ')">
+						<input type="button" class="common-button-styles delete-one" value="⌫" onclick="inp('delete-one')">
+					</form>
+				</div>
+				<div class="buttons-rows__second-row">
+					<form action="1">
+						<input type="button" class="common-button-styles seven" value="7" onclick="inp(7)">
+						<input type="button" class="common-button-styles eight" value="8" onclick="inp(8)">
+						<input type="button" class="common-button-styles nine" value="9" onclick="inp(9)">
+						<input type="button" class="common-button-styles division" value="÷" onclick="inp(' ÷ ')">
+					</form>
+				</div>
+				<div class="buttons-rows__third-row">
+					<form action="1">
+						<input type="button" class="common-button-styles four" value="4" onclick="inp(4)">
+						<input type="button" class="common-button-styles five" value="5" onclick="inp(5)">
+						<input type="button" class="common-button-styles six" value="6" onclick="inp(6)">
+						<input type="button" class="common-button-styles multiplication" value="×" onclick="inp(' × ')">
+					</form>
+				</div>
+				<div class="buttons-rows__fourth-row">
+					<form action="1">
+						<input type="button" class="common-button-styles one" value="1" onclick="inp(1)">
+						<input type="button" class="common-button-styles two" value="2" onclick="inp(2)">
+						<input type="button" class="common-button-styles three" value="3" onclick="inp(3)">
+						<input type="button" class="common-button-styles subtraction" value="-" onclick="inp(' - ')">
+					</form>
+				</div>
+				<div class="buttons-rows__fifth-row">
+					<form action="1">
+						<input type="button" class="common-button-styles zero" value="0" onclick="inp(0)">
+						<input type="button" class="common-button-styles dot" value="." onclick="inp('.')">
+						<input type="button" class="common-button-styles equals" value="=" onclick="inp('equals')">
+						<input type="button" class="common-button-styles plus" value="+" onclick="inp(' + ')">
+					</form>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/calculator.js"></script>
+</body>
+</html>
